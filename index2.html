@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EcoEnergy Enterprise | Sustainable Climate Technology</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Space Grotesk -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1f7a63",
+                        "accent-fresh": "#39B54A",
+                        "energy-lime": "#A3D65C",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#131f1c",
+                        "charcoal": "#1C1C1C",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "sans": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .dark-glass {
+            background: rgba(31, 122, 99, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .eco-glow {
+            box-shadow: 0 0 20px rgba(163, 214, 92, 0.3);
+        }
+        .marquee {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 2rem;
+        }
+        .marquee-content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            gap: 2rem;
+            min-width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-charcoal transition-colors duration-300 overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 glass border-b border-primary/10 px-4 md:px-10 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl font-bold">eco</span>
+<h2 class="text-xl font-bold tracking-tight">EcoEnergy Enterprise</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Solutions</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Technology</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Impact</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Projects</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">About</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden sm:flex items-center bg-primary/5 rounded-lg px-3 py-1.5 border border-primary/10">
+<span class="material-symbols-outlined text-primary text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-40 placeholder:text-primary/40" placeholder="Search technology..." type="text"/>
+</div>
+<button class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                    Contact Us
+                </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center px-4 md:px-10 py-20 overflow-hidden bg-background-light">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center z-10">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-energy-lime/20 text-primary text-xs font-bold uppercase tracking-widest border border-energy-lime/30">
+<span class="material-symbols-outlined text-sm">bolt</span> Carbon Neutral Tech
+                    </div>
+<h1 class="text-5xl md:text-7xl font-bold leading-[1.1] text-charcoal">
+                        Powering a <span class="text-primary">Sustainable</span> Future from Waste
+                    </h1>
+<p class="text-lg text-charcoal/70 max-w-lg leading-relaxed">
+                        Revolutionary waste-to-energy technology for a carbon-neutral circular economy. We bridge the gap between urban waste management and renewable energy demand.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform flex items-center gap-2">
+                            View Solutions <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white text-primary border border-primary/20 px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-all">
+                            Our Impact
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl relative group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Cinematic solar panels and wind turbines in nature" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaqn3BWuXNTpaAVLQbhrZPxBfWaV6BzPbOi7VRTc23_h0witrNYUKIoUecSdVo9JpAydWNfCf-fofo2XfFDo6dNijwwgRl5S7HcoieRLwjSmA95wJyWF9nQA0gmE-NrzmyE4MR0sSd5-gUbebhYdm-fBq0I092ndp6yBpBI-S4qbBasIKnLI7XhWi6XMMGgzsIZKd_YsdnN-JenrmMyq6ulBcJnY0P0tQj2RqmPqXgEHIGX5EuEq8iw10pyEZJowDw2hrqhYLkPfM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 p-6 glass rounded-xl max-w-xs">
+<p class="text-primary font-bold">Innovation Spotlight</p>
+<p class="text-sm text-charcoal/80">Next-gen anaerobic digestion active in over 12 countries.</p>
+</div>
+</div>
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-energy-lime/30 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="max-w-7xl mx-auto px-4 -mt-12 relative z-20">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-white p-6 rounded-2xl shadow-xl border border-primary/5 hover:border-primary/20 transition-all group">
+<p class="text-charcoal/60 text-sm font-medium mb-1">Waste Converted</p>
+<h3 class="text-3xl font-bold text-primary">1.2M <span class="text-sm font-normal text-charcoal/40">Tons</span></h3>
+<div class="mt-3 flex items-center text-accent-fresh text-xs font-bold bg-accent-fresh/10 w-fit px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-xs">trending_up</span> +12%
+                    </div>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-xl border border-primary/5 hover:border-primary/20 transition-all group">
+<p class="text-charcoal/60 text-sm font-medium mb-1">Clean Energy</p>
+<h3 class="text-3xl font-bold text-primary">850 <span class="text-sm font-normal text-charcoal/40">GWh</span></h3>
+<div class="mt-3 flex items-center text-accent-fresh text-xs font-bold bg-accent-fresh/10 w-fit px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-xs">trending_up</span> +18%
+                    </div>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-xl border border-primary/5 hover:border-primary/20 transition-all group">
+<p class="text-charcoal/60 text-sm font-medium mb-1">CO2 Reduced</p>
+<h3 class="text-3xl font-bold text-primary">2.4M <span class="text-sm font-normal text-charcoal/40">Tons</span></h3>
+<div class="mt-3 flex items-center text-accent-fresh text-xs font-bold bg-accent-fresh/10 w-fit px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-xs">trending_up</span> +15%
+                    </div>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-xl border border-primary/5 hover:border-primary/20 transition-all group">
+<p class="text-charcoal/60 text-sm font-medium mb-1">Facilities</p>
+<h3 class="text-3xl font-bold text-primary">45+ <span class="text-sm font-normal text-charcoal/40">Global</span></h3>
+<div class="mt-3 flex items-center text-accent-fresh text-xs font-bold bg-accent-fresh/10 w-fit px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-xs">trending_up</span> +5%
+                    </div>
+</div>
+</div>
+</section>
+<!-- New Section 1: The Challenge We Solve -->
+<section class="py-24 px-4 md:px-10 bg-background-light">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+<div class="relative order-2 lg:order-1 group">
+<div class="aspect-video rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Industrial waste facility transitioning into green space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqI9I8pmBbmdOT74OT3WO6ymLS-yLwoPisRRQ8JDhFZb_SzmyRtXnXOhgY3sCm_zh9xSrUh6uSKCi7nj4vhM6jOYA456CLxbY6DiWSkax4ZtNN1Zjs3KKsF-ZExjckBLmAiyFiHD_NUJhQbq0clYe327wfmyVnyKjPnqcWTHZr_82YGC7B85SVTnvvo_jvbWBDm-MbPl_weVzJEKTXhJ9f8qCWGoC-Lm_0Rx3va_DaXrFLSUsCBn2_SqlGmtH6rbbNCKH-EwiIzs8"/>
+</div>
+<div class="absolute -bottom-6 -right-6 p-8 bg-primary rounded-2xl text-white shadow-2xl max-w-xs eco-glow">
+<span class="material-symbols-outlined text-4xl mb-4">cyclone</span>
+<h4 class="text-xl font-bold mb-2">Molecular Sorting</h4>
+<p class="text-sm text-white/80">Proprietary tech that separates waste at a microscopic level for 98% efficiency.</p>
+</div>
+</div>
+<div class="space-y-6 order-1 lg:order-2">
+<h2 class="text-4xl md:text-5xl font-bold text-charcoal tracking-tight leading-tight">
+                        Turning the Growing Waste Problem into <span class="text-primary">Clean Energy Opportunities</span>
+</h2>
+<p class="text-lg text-charcoal/70 leading-relaxed">
+                        The world generates 2.01 billion tons of municipal solid waste annually. Most ends up in landfills, releasing harmful methane. We view this not as a burden, but as an untapped feedstock for the next generation of energy grids.
+                    </p>
+<p class="text-charcoal/70 leading-relaxed">
+                        Our proprietary conversion technology bridges the gap between urban waste management and renewable energy demand, creating a seamless circular ecosystem that serves both the planet and the economy.
+                    </p>
+<ul class="space-y-4 pt-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-fresh">check_circle</span>
+<span class="font-medium">Reduces Landfill dependency by 90%</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-accent-fresh">check_circle</span>
+<span class="font-medium">Direct injection to existing power grids</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Workflow Section -->
+<section class="py-24 px-4 md:px-10 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl font-bold">The Transformation Journey</h2>
+<p class="text-charcoal/60 max-w-2xl mx-auto">A standardized, highly optimized workflow from intake to energy output.</p>
+</div>
+<div class="grid md:grid-cols-4 gap-8 relative">
+<!-- Workflow Item 1 -->
+<div class="flex flex-col items-center text-center group">
+<div class="size-20 rounded-2xl bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-4xl">local_shipping</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Collection &amp; Sorting</h4>
+<p class="text-sm text-charcoal/60">Smart automated intake with AI-based sorting systems.</p>
+</div>
+<!-- Workflow Item 2 -->
+<div class="flex flex-col items-center text-center group">
+<div class="size-20 rounded-2xl bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-4xl">rebase_edit</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Anaerobic Digestion</h4>
+<p class="text-sm text-charcoal/60">Organic waste breakdown in oxygen-free environments.</p>
+</div>
+<!-- Workflow Item 3 -->
+<div class="flex flex-col items-center text-center group">
+<div class="size-20 rounded-2xl bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-4xl">filter_alt</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Gas Purification</h4>
+<p class="text-sm text-charcoal/60">Scrubbing systems ensuring methane purity of 99%.</p>
+</div>
+<!-- Workflow Item 4 -->
+<div class="flex flex-col items-center text-center group">
+<div class="size-20 rounded-2xl bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-4xl">bolt</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Energy Generation</h4>
+<p class="text-sm text-charcoal/60">High-efficiency cogeneration for power and heat.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- New Section 2: Our Environmental Impact Band -->
+<section class="bg-primary text-white py-20 px-4 md:px-10 overflow-hidden relative">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(163,214,92,0.1),transparent)]"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
+<div class="space-y-2">
+<p class="text-energy-lime text-6xl font-bold">1.2M+</p>
+<p class="text-white/60 uppercase tracking-widest text-sm font-bold">Tons Converted</p>
+<div class="h-1 w-12 bg-energy-lime/30 mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="space-y-2">
+<p class="text-energy-lime text-6xl font-bold">850</p>
+<p class="text-white/60 uppercase tracking-widest text-sm font-bold">GWh Produced</p>
+<div class="h-1 w-12 bg-energy-lime/30 mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="space-y-2">
+<p class="text-energy-lime text-6xl font-bold">2.4M</p>
+<p class="text-white/60 uppercase tracking-widest text-sm font-bold">Tons CO2 Offset</p>
+<div class="h-1 w-12 bg-energy-lime/30 mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="space-y-2">
+<p class="text-energy-lime text-6xl font-bold">45</p>
+<p class="text-white/60 uppercase tracking-widest text-sm font-bold">Active Plants</p>
+<div class="h-1 w-12 bg-energy-lime/30 mx-auto mt-4 rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- New Section 3: Technology Innovation -->
+<section class="py-24 px-4 md:px-10 bg-background-light">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-2xl space-y-4">
+<h2 class="text-4xl font-bold">Technology Innovation &amp; <span class="text-primary">Smart Systems</span></h2>
+<p class="text-charcoal/60">Our enterprise ecosystem integrates hardware with deep-learning software to maximize operational uptime and energy yield.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all whitespace-nowrap">
+                        Download Tech Specs <span class="material-symbols-outlined">description</span>
+</button>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white p-8 rounded-2xl border border-primary/10 hover:shadow-2xl transition-all duration-300">
+<div class="bg-primary/10 p-4 rounded-xl w-fit text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">smart_toy</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Plant Automation</h4>
+<p class="text-sm text-charcoal/60 leading-relaxed">Fully autonomous facility operations reducing manual intervention by 70%.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl border border-primary/10 hover:shadow-2xl transition-all duration-300">
+<div class="bg-energy-lime/20 p-4 rounded-xl w-fit text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">query_stats</span>
+</div>
+<h4 class="text-xl font-bold mb-3">AI Monitoring</h4>
+<p class="text-sm text-charcoal/60 leading-relaxed">Predictive maintenance algorithms that foresee component failure weeks in advance.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl border border-primary/10 hover:shadow-2xl transition-all duration-300">
+<div class="bg-primary/10 p-4 rounded-xl w-fit text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">science</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Advanced Digestion</h4>
+<p class="text-sm text-charcoal/60 leading-relaxed">Optimized microbial environments for faster organic waste breakdown.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl border border-primary/10 hover:shadow-2xl transition-all duration-300">
+<div class="bg-energy-lime/20 p-4 rounded-xl w-fit text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">air</span>
+</div>
+<h4 class="text-xl font-bold mb-3">Gas Purification</h4>
+<p class="text-sm text-charcoal/60 leading-relaxed">Proprietary molecular sieves for high-purity biomethane production.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- New Section 4: Real Projects Portfolio -->
+<section class="py-24 px-4 md:px-10 bg-white">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl font-bold mb-12 text-center">Real Projects &amp; Installations</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-3xl bg-charcoal">
+<img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:opacity-40" data-alt="Modern eco industrial facility in a city" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4iPjfmZqW_ct6-NcHIGZMZeTzOAO6RRb1GtJwJSmsVWYp81DudTv68BrMtDRIGcKNWpfkDXNoqpOaDppZCg7QXDX91K6P5Zt95x65NCgQEpDsMzR3wcpO37ItRxNqTczD9kPs8j90H8dDJaZxD8KLOpuBakjX0uMarQVodxyp3lMSU0TXQGu22aKIDggqqkNSDjDDAQAkU4mKvyWp2Txuk2I0mpe7WF7_41n0NU89duBSfaGAepQn8lEW_W9-XGKmCc4gMsdrDuE"/>
+<div class="absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 transition-all duration-500 opacity-0 group-hover:opacity-100">
+<p class="text-energy-lime font-bold text-sm tracking-widest uppercase">Municipal Waste</p>
+<h4 class="text-white text-3xl font-bold mt-2">Copenhagen Hub</h4>
+<div class="flex items-center gap-4 text-white/80 text-sm mt-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Denmark</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">bolt</span> 120 GWh/yr</span>
+</div>
+<p class="text-white/60 text-sm mt-6 line-clamp-2">Providing clean heating and electricity to 15,000 households using urban food waste.</p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-3xl bg-charcoal">
+<img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:opacity-40" data-alt="Industrial complex with green hills behind" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_j0klQsPBOlGwYwJp55BZMx3nvtkwCzcwubDGBl7UXAjw3ZWdTseKc6jovuclJmJ405cEhhlstsFT4DTzgHGL_-fZA8ni3gdaWox7aogrE3-3bTbnHxV60knx2N0dnPB6w7aQSTm-d75GHROAyJfLmNqgzMo9mn2jq_s_ma_14elgQotexZLft0rKN8KlfITSn5lKjkMFPuy2imzJbzibdWtfJP2oH3GGA2Jw1ddMEXm5E-9GQO0uTf3TRtDDnbYRTKl-m0kPlQY"/>
+<div class="absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 transition-all duration-500 opacity-0 group-hover:opacity-100">
+<p class="text-energy-lime font-bold text-sm tracking-widest uppercase">Industrial Energy</p>
+<h4 class="text-white text-3xl font-bold mt-2">Bavaria Plant</h4>
+<div class="flex items-center gap-4 text-white/80 text-sm mt-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Germany</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">bolt</span> 85 GWh/yr</span>
+</div>
+<p class="text-white/60 text-sm mt-6 line-clamp-2">Direct grid feed for heavy manufacturing zones using agricultural residuals.</p>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-3xl bg-charcoal">
+<img class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:opacity-40" data-alt="Night view of a sustainable energy plant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8l8P3FkFeh_cgMlld4ZNM6T2VfhZeFhRz2yU7iAuyVFkH_4AU92bLlJ8utGRsv1ZCishOChkRgwQQr1MjkR5i-pJqjhofAJHjnV9WxCB3y7mzhIBk-ZDuptuUIZ-kK2MLMUs4wvrk-XqNMoR2cwgICxN6lJ0ncEuvmkzYbV1VQvHsI4v4CWZIQABIQrKV7T-rj32_KE8hlkHov5s64txIJkk4V8oxWERe8D-iNL_NAkhNAK__ihF1aaz8FGYufchjqLswnibT1Ks"/>
+<div class="absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 transition-all duration-500 opacity-0 group-hover:opacity-100">
+<p class="text-energy-lime font-bold text-sm tracking-widest uppercase">Grid Integration</p>
+<h4 class="text-white text-3xl font-bold mt-2">Ontario Site</h4>
+<div class="flex items-center gap-4 text-white/80 text-sm mt-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Canada</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">bolt</span> 200 GWh/yr</span>
+</div>
+<p class="text-white/60 text-sm mt-6 line-clamp-2">Flagship North American facility converting municipal waste to grid-ready biogas.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- New Section 5: Trusted By -->
+<section class="py-16 border-y border-primary/10 bg-background-light">
+<div class="max-w-7xl mx-auto px-4">
+<p class="text-center text-charcoal/40 text-sm font-bold uppercase tracking-[0.2em] mb-12">Trusted By Governments &amp; Industry Leaders</p>
+<div class="marquee">
+<div class="marquee-content items-center">
+<div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
+<span class="material-symbols-outlined text-4xl">domain</span>
+<span class="text-xl font-bold">MUNICH CITY</span>
+</div>
+<div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
+<span class="material-symbols-outlined text-4xl">factory</span>
+<span class="text-xl font-bold">ECO-GLOBAL</span>
+</div>
+<div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
+<span class="material-symbols-outlined text-4xl">energy_savings_leaf</span>
+<span class="text-xl font-bold">SOLARIS IND.</span>
+</div>
+<div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
+<span class="material-symbols-outlined text-4xl">foundation</span>
+<span class="text-xl font-bold">VANCOUVER MUNI</span>
+</div>
+<div class="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
+<span class="material-symbols-outlined text-4xl">apartment</span>
+<span class="text-xl font-bold">GREEN GIANTS</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- New Section 6: Our Vision Banner -->
+<section class="relative py-32 px-4 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Abstract aerial view of a futuristic green city" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOe8tayohRF4ZpUyi_InR3vHBe2rPmJ39_rhXneHO4FUHSHYsbywQNzLlP5keo8A3WiS-ILeNh4S8VLzmxypCf1NIyzv4-fwGDD5rjJrEJJUOXfUVR1Df2vO4fT_jiEyoUe0RlG_9TkTS_L8hm4HkV1-Jhy2BClZVNLxC6AivGyI1hQGKUEymQcsTkCioHNDVItSOW5xgzgyWALIxkaiYZtYHajRJxrc_T-nZGOOp_tbvTlTc4VTbGQq0O-n7ElYDFUjOol-rN_B4"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary to-primary/40 mix-blend-multiply"></div>
+</div>
+<div class="max-w-4xl mx-auto relative z-10 text-center space-y-8">
+<h2 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+                    Building a Circular Waste-to-Energy Ecosystem for <span class="text-energy-lime">Future Cities</span>
+</h2>
+<p class="text-xl text-white/80 leading-relaxed">
+                    We envision a world where urban living is powered by the very resources it currently discards. Join us in redesigning the global energy grid.
+                </p>
+<div class="pt-6">
+<button class="bg-energy-lime text-primary px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform eco-glow">
+                        Partner with EcoEnergy
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer: Enterprise Mega Footer -->
+<footer class="bg-charcoal text-white pt-20 pb-10 px-4 md:px-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20">
+<div class="lg:col-span-2 space-y-6">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl font-bold text-energy-lime">eco</span>
+<h2 class="text-2xl font-bold tracking-tight text-white">EcoEnergy Enterprise</h2>
+</div>
+<p class="text-white/60 max-w-sm leading-relaxed">
+                    A global leader in waste-to-energy technology, dedicated to providing carbon-neutral solutions for a sustainable industrial future.
+                </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+<a class="size-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">groups</span>
+</a>
+<a class="size-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">hub</span>
+</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="text-lg font-bold">Solutions</h4>
+<ul class="space-y-4 text-white/50 text-sm">
+<li><a class="hover:text-energy-lime transition-colors" href="#">Municipal Waste</a></li>
+<li><a class="hover:text-energy-lime transition-colors" href="#">Industrial Energy</a></li>
+<li><a class="hover:text-energy-lime transition-colors" href="#">Anaerobic Digestion</a></li>
+<li><a class="hover:text-energy-lime transition-colors" href="#">Grid Feed-in</a></li>
+<li><a class="hover:text-energy-lime transition-colors" href="#">Heat Cogeneration</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-lg font-bold">Company</h4>
+<ul class="space-y-4 text-white/50 text-sm">
+<li><a class="hover:text-energy-lime transition-colors" href="#">About Technology</a></li>
+<li><a class="hover:text-energy-lime transition-colors" href="#">Our Impact</a></li>
+<li><a class="hover:text-energy-lime transition-colors" href="#">Project Portfolio</a></li>
+<li><a class="hover:text-energy-lime transition-colors" href="#">Sustainability Report</a></li>
+<li><a class="hover:text-energy-lime transition-colors" href="#">Contact Support</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-lg font-bold">Global Offices</h4>
+<ul class="space-y-4 text-white/50 text-sm">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-energy-lime text-lg">location_on</span>
+<span>Copenhagen, Denmark<br/>(HQ)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-energy-lime text-lg">location_on</span>
+<span>Munich, Germany</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-energy-lime text-lg">location_on</span>
+<span>Toronto, Canada</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-wrap gap-8 items-center">
+<img class="opacity-40 grayscale h-8" data-alt="ISO 14001 Certification Badge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB65Vfrc_Qx6vqN3Y05htSkY-3v61wD_w5FPbTawzmz8T41G1R7MUhI-NBW3kl7MZgfgHZZW-i7MhPl7p3Rk5cWm8XGSY0EpoQwdk9IxZkWBhKAFnXV5jBFf1vbXXVvb2XCjK7DtAwK4eVuiBrAzFHWdRfNDtqLApbmGPiqvLoVzr6LB7Lqfg88lO8od0agrNlLiZHjRwpzf55KSmr_vrFeBqmS4NMqXDpR0a4KLYAeXwDaHQRlmrWOMF7XpJ_Vu8zm2IBUJnZhOQ4"/>
+<img class="opacity-40 grayscale h-8" data-alt="Carbon Trust Certification Badge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb-KghY6uLps7r06l6oWnBl3BzMwTT3l7XScMBgivMtZI3zbeS57-dn5nDCYune38hL4iUFRWomA_SugHXIfl3HC-XiE4iYu3RdBOYtctqK7FG1-Q1C2kADAzMioBoo-7hZeWWjnEwPAhLMvq9yINq88a5Q3cPLUL3VIrZZ9aASN1Arl9xWoC1EoXYvoykMZye_RSey9cP66nKu9iDK12Q60Q1VRo38_lnEdBDKKEOLxd1dnfkA5NRnW7kapm90PiC8yBb-6iSn58"/>
+<img class="opacity-40 grayscale h-8" data-alt="EcoVadis Gold Badge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6U-jepD2OEPzh-kihQxLsVjrEFP9UtEggixlaQCt1lwAXL0DQWnEp8EKasmHNvRCiuivsyjp45t8RsfIYHEjL2tM97JyMXYBvEc9M88VfqAQS-odkMxZ7aEBmXfGbwkRBq6Tb0O0I543S66kHw3itJRPnwd-kwgnrlCR1vTJTycwE1Q56koC8MSqrsToFrY0aeYy0h2mvXQ7WxXe24gXSs1-Z8JnJ67pOu_v60NBPGQQ8kS84dvBAeAM-HxvF_0OwQ4UVDdlszeY"/>
+</div>
+<div class="text-white/40 text-xs flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<span>© 2024 EcoEnergy Enterprise. All rights reserved.</span>
+</div>
+</div>
+</footer>
+</body></html>
